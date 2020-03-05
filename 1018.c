@@ -42,9 +42,9 @@ int main(void)
   board = (char**)malloc(sizeof(char*) * N);
   for(int i = 0; i < N; i++) board[i] = (char*)malloc(sizeof(char) * (M + 1));
   for(int i = 0; i < N; i++) { scanf("%s", board[i]); board[i][M] = '\0'; }
-  for(int i = 0; i <= M - 8; i++)
+  for(int i = 0; i <= N - 8; i++)
   {
-    for(int j = 0; j <= N - 8; j++)
+    for(int j = 0; j <= M - 8; j++)
     {
       check(i, j);
     }
