@@ -4,7 +4,7 @@
 
 typedef struct _stair{
   int score;
-  int sum;
+  long int sum;
   int is_onetwo;
 } stair;
 
@@ -42,7 +42,7 @@ int main(void)
 
   get_max(N);
 
-  printf("%d\n", stairs[N].sum);
+  printf("%ld\n", stairs[N].sum);
 
   return 0;
 }
